@@ -10,7 +10,7 @@ var loginButton = document.getElementById("submit");
 
 function checkUser(){
 if (usernameEntry.value === myusername && passwordEntry.value === password){
-    window.location = "file:///C:/Users/MARY%20OJO/Documents/Web%20development%20projects/Productivity%20App/Home%20page/home_index.html";
+    window.location = "Home page/home_index.html";
 } else{
     //onclick of submit
     alert("Sorry, wrong username or password");
