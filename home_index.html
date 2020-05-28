@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
+<body>
+    <h2 class="logo"><img src="logo.png"></h2>
+    <div class="page-content">
+    <div class="innerbox">
+        <div class="box-content">
+       <div class="left">
+           <h3 id="welcome-message" class="welcome"></h3>
+           <p id="current-date" class="regular-light"></p>
+           <p id="current-time"class="regular-light"></p>
+           <h4 class="default-header">Today's Tasks <span class="plus-icon-span"><img src="icons\plus-circle.svg" class="small-icon"></span></h4>
+           <div class="empty-task"><img src="images\Group.png" class="no-task-image"></div>
+           <h4 class="default-header">Upcoming Events <span class="plus-icon-span"><img src="icons\plus-circle.svg" class="small-icon"></span></h4>
+           <div class="each-event">
+            <p class="event-name">Google Analytics</p>
+            <div class="event-details"><span class="event-time"><img class="event-icon" src="icons\map-pin.svg"></img>Online</span>
+                <span class="event-time"><img class="event-icon" src="icons\clock.svg"></img>12: 00 PM</span></div>
+        </div>
+            <div class="each-event">
+                <p class="event-name">Google Summer of Code</p>
+                <div class="event-details"><span class="event-time"><img class="event-icon" src="icons\map-pin.svg"></img>Geneva, Switzerland</span>
+                    <span class="event-time"><img class="event-icon" src="icons\clock.svg"></img>10: 00 AM</span></div>
+            </div>
+        </div>
+       <div class="right">
+           <div class="top">
+               <input type="text" class="form-input search-bar"><img class="small-icon search-icon" src="icons\toggle-right.svg">
+               <img class="small-icon search-icon" src="icons\settings.svg">
+           </div>
+        <h4 class="default-header">News</h4>
+        <div class="each-news">
+            <img class="news-image" src="Rectangle 4.png">
+            <p class="news-header">Covid - 19 and the Financial Sector</p>
+            <p class="news-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non en....</p>
+        </div>
+        <div class="each-news">
+            <img class="news-image" src="images\Rectangle 4-1.png">
+            <p class="news-header">Agriculture: The Green Gold</p>
+            <p class="news-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non en....</p>
+        </div>
+       </div>
+       </div>
+    </div>
+    <div class="action-cards">
+        <div class="top-action-cards">
+        <div class="each-card" id="timer">
+            <img class="card-icon" src="icons\timer.svg">
+            <p class="card-name">Timer</p>
+        </div>
+        <div class="each-card" id="todolist">
+            <img class="card-icon"src="icons\to-do-list.svg">
+            <p class="card-name">To-Do List</p>
+        </div>
+        <div class="each-card" id="calculator">
+            <img class="card-icon"src="icons\calculator.svg">
+            <p class="card-name">Calculator</p>
+        </div>
+        </div>
+        <div class="bottom-action-cards">
+        <div class="each-card" id="alarm">
+            <img class="card-icon"src="icons\alarm-clock.svg">
+            <p class="card-name">Alarm</p>
+        </div>
+        <div class="each-card" id="calendar">
+            <img class="card-icon"src="icons\calendar.svg">
+            <p class="card-name">Calendar</p>
+        </div>
+        <div class="each-card" id="dictionary">
+            <img class="card-icon"src="icons\book.svg">
+            <p class="card-name">Dictionary</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="homescript.js"></script>
+</body>
+</html>
