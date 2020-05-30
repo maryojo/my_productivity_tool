@@ -10,7 +10,7 @@ var loginButton = document.getElementById("submit");
 
 function checkUser(){
 if (usernameEntry.value === myusername && passwordEntry.value === password){
-    window.location = "Home page/home_index.html";
+    window.location = "home-index.html";
 } else{
     //onclick of submit
     alert("Sorry, wrong username or password");
