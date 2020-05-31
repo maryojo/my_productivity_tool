@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet"></head>
+<body>
+    <h2 class="logo"><img src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\logo.png"></h2>
+    <div class="page-content">
+    <div class="innerbox">
+        <div class="box-content">
+       <div class="left">
+           <h3 id="welcome-message" class="welcome"></h3>
+           <p id="current-date" class="regular-light"></p>
+           <p id="current-time"class="regular-light"></p>
+           <h4 class="default-header">Today's Tasks <span class="plus-icon-span"><img src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\plus-circle.svg" class="small-icon"></span></h4>
+           <div class="empty-task"><img src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\images\Group.png" class="no-task-image"></div>
+           <h4 class="default-header">Upcoming Events <span class="plus-icon-span"><img src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\plus-circle.svg" class="small-icon"></span></h4>
+           <div class="each-event">
+            <p class="event-name">Google Analytics</p>
+            <div class="event-details"><span class="event-time"><img class="event-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\map-pin.svg"></img>Online</span>
+                <span class="event-time"><img class="event-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\clock.svg"></img>12: 00 PM</span></div>
+        </div>
+            <div class="each-event">
+                <p class="event-name">Google Summer of Code</p>
+                <div class="event-details"><span class="event-time"><img class="event-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\map-pin.svg"></img>Geneva, Switzerland</span>
+                    <span class="event-time"><img class="event-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\clock.svg"></img>10: 00 AM</span></div>
+            </div>
+        </div>
+       <div class="right">
+           <div class="top">
+               <input type="text" class="form-input search-bar"><img class="small-icon search-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\toggle-right.svg">
+               <img class="small-icon search-icon" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\icons\settings.svg">
+           </div>
+        <h4 class="default-header">News</h4>
+        <div class="each-news">
+            <img class="news-image" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\images\Rectangle 4.png">
+            <p class="news-header">Covid - 19 and the Financial Sector</p>
+            <p class="news-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non en....</p>
+        </div>
+        <div class="each-news">
+            <img class="news-image" src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\images\Rectangle 4-1.png">
+            <p class="news-header">Agriculture: The Green Gold</p>
+            <p class="news-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non en....</p>
+        </div>
+       </div>
+       </div>
+    </div>
+    <div class="calculator">
+        <div class="row"><form id="output"><input id="display" class="display" type="text" placeholder="0" disabled="true"/></form></div>    
+        <div class="row calculator_keys">
+        <div class="columns">
+        <div class="button_column">
+            <button id="divide" class="functional_key" onclick="buttonValue('/')" value="'/'">/</button>
+            <button id="number7" class="key" onclick="buttonValue(7)" value="7" >7</button>
+            <button id="number4" class="key" onclick="buttonValue(4)" value="4">4</button>
+            <button id="number1" class="key" onclick="buttonValue(1)" value="1">1</button><button id="decimal" onclick="buttonValue('.')" class="key" value="'.'" >.</button></div>
+        <div class="button_column">
+            <button id="multiply" class="functional_key" onclick="buttonValue('*')" value="'*'">&times;</button>
+            <button id="number8" class="key" onclick="buttonValue(8)" value="8">8</button>
+            <button id="number5" class="key" onclick="buttonValue(5)" value="5">5</button>
+            <button id="number2" class="key" onclick="buttonValue(2)" value="2">2</button>
+            <button id="zero" class="key" onclick="buttonValue(0)" value="0">0</button></div>
+        <div class="button_column">
+            <button id="subtract" class="functional_key" onclick="buttonValue('-')" value="'-'">-</button>
+            <button id="number9" class="key" onclick="buttonValue(9)" value="9">9</button>
+            <button id="number6" class="key" onclick="buttonValue(6)" value="6">6</button>
+            <button id="number3" class="key" onclick="buttonValue(3)" value="3">3</button>
+            <button id="backspace" class="key" onclick="backspace()">C</button></div>
+        <div class="button_column">
+            <input id="clear" type="button" class="functional_key" onclick="clearScreen()" value="AC"/>
+            <button id="addition" class="large_key functional_key" onclick="buttonValue('+')" value="'+'">+</button>
+            <button id="equals" class="large_key functional_key" onclick= "display.value = eval(display.value)">=</button></div> 
+        </div>
+        </div>    
+    </div>
+    </div>
+    <script src="C:\Users\MARY OJO\Documents\Web development projects\Productivity App\Calculator\calculator-script.js"></script>
+    </body>
