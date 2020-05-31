@@ -46,7 +46,7 @@ function runCalendar(){
         window.location = "https://developers.google.com/calendar/quickstart/js";
 }
 function runCalculator(){
-    window.location = "Calculator/calculator.html";
+    window.location = "calculator.html";
 }
 function runDictionary(){
     window.location = "";
